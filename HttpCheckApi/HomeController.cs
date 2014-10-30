@@ -15,7 +15,7 @@ namespace HttpCheckApi
         {
             return new ResponseMessageResult(new HttpResponseMessage()
             {
-                Content = new StringContent("Hello World", Encoding.UTF8,"text/plain")
+                Content = new StringContent("Hello World v2", Encoding.UTF8,"text/plain")
             });
         }
     }
