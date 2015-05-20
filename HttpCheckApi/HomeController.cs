@@ -20,5 +20,13 @@ namespace HttpCheckApi
         }
     }
 
+ public class EchoController : ApiController
+    {
+        public async Task<HttpResponseMessage> Post()
+        {
+            await Request.Content.LoadIntoBufferAsync();
 
+            return new HttpResponseMessage() {Content = Request.Content};
+        }
+    }
 }
