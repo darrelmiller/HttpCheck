@@ -48,6 +48,8 @@ build/
 *.log
 *.scc
 
+.vs
+
 # Visual C++ cache files
 ipch/
 *.aps
